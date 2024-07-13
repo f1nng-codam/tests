@@ -6,14 +6,14 @@
 /*   By: fgroenew <fgroenew@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 14:36:09 by fgroenew          #+#    #+#             */
-/*   Updated: 2024/07/13 14:17:20 by fgroenew         ###   ########.fr       */
+/*   Updated: 2024/07/13 14:30:31 by fgroenew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n);
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 
 int	ft_contains_null_byte(char *str, int size)
 {
@@ -38,13 +38,13 @@ void	ft_fill_str(char *str, int size)
 
 void	test_00(void)
 {
-	char	dest[20];
-	char	src[14] = "Hello, world!";
-	int		n = 13;
+	char				dest[20];
+	char				src[14] = "Hello, world!";
+	unsigned int		n = 14;
 
-	ft_fill_str(dest, 20);
-	ft_strncpy(dest, src, n);
-	printf("--- EX01 - Test00\n");
+	ft_fill_str(dest, 40);
+	ft_strlcpy(dest, src, n);
+	printf("--- EX10 - Test00\n");
 	printf("src: %s\n", src);
 	printf("n: %d\n", n);
 	printf("dest: %s (should be Hello, world!)\n", dest);
@@ -53,13 +53,13 @@ void	test_00(void)
 
 void	test_01(void)
 {
-	char	dest[20];
-	char	src[7] = "Hello!";
-	int		n = 3;
+	char				dest[20];
+	char				src[7] = "Hello!";
+	unsigned int		n = 4;
 
 	ft_fill_str(dest, 20);
-	ft_strncpy(dest, src, n);
-	printf("--- EX01 - Test01\n");
+	ft_strlcpy(dest, src, n);
+	printf("--- EX10 - Test01\n");
 	printf("src: %s\n", src);
 	printf("n: %d\n", n);
 	printf("dest: %s (should be Hel)\n", dest);
