@@ -6,7 +6,7 @@
 /*   By: fgroenew <fgroenew@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 14:36:09 by fgroenew          #+#    #+#             */
-/*   Updated: 2024/07/13 14:30:31 by fgroenew         ###   ########.fr       */
+/*   Updated: 2024/07/13 14:39:55 by fgroenew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,31 +38,35 @@ void	ft_fill_str(char *str, int size)
 
 void	test_00(void)
 {
-	char				dest[20];
-	char				src[14] = "Hello, world!";
-	unsigned int		n = 14;
+	char			dest[20];
+	char			src[14] = "Hello, world!";
+	unsigned int	n = 14;
+	unsigned int	result;
 
 	ft_fill_str(dest, 40);
-	ft_strlcpy(dest, src, n);
+	result = ft_strlcpy(dest, src, n);
 	printf("--- EX10 - Test00\n");
 	printf("src: %s\n", src);
 	printf("n: %d\n", n);
 	printf("dest: %s (should be Hello, world!)\n", dest);
+	printf("result: %d (should be 13)\n", result);
 	printf("contains null byte: %d (should be 1)\n", ft_contains_null_byte(dest, n));
 }
 
 void	test_01(void)
 {
-	char				dest[20];
-	char				src[7] = "Hello!";
-	unsigned int		n = 4;
+	char			dest[20];
+	char			src[7] = "Hello!";
+	unsigned int	n = 4;
+	unsigned int	result;
 
 	ft_fill_str(dest, 20);
-	ft_strlcpy(dest, src, n);
+	result = ft_strlcpy(dest, src, n);
 	printf("--- EX10 - Test01\n");
 	printf("src: %s\n", src);
 	printf("n: %d\n", n);
 	printf("dest: %s (should be Hel)\n", dest);
+	printf("result: %d (should be 6)\n", result);
 	printf("contains null byte: %d (should be 1)\n", ft_contains_null_byte(dest, n));
 }
 
