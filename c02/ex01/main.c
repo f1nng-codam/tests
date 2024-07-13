@@ -6,7 +6,7 @@
 /*   By: fgroenew <fgroenew@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 14:36:09 by fgroenew          #+#    #+#             */
-/*   Updated: 2024/07/13 12:46:45 by fgroenew         ###   ########.fr       */
+/*   Updated: 2024/07/13 12:56:54 by fgroenew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,8 @@ void	test_00(void)
 	printf("--- EX01 - Test00\n");
 	printf("src: %s\n", src);
 	printf("n: %d\n", n);
-	printf("dest: %s\n", dest);
-	printf("contains null byte: %d\n", ft_contains_null_byte(dest, n));
+	printf("dest: %s (should be Hello, world!)\n", dest);
+	printf("contains null byte: %d (should be 1)\n", ft_contains_null_byte(dest, n));
 }
 
 void	test_01(void)
@@ -62,8 +62,8 @@ void	test_01(void)
 	printf("--- EX01 - Test01\n");
 	printf("src: %s\n", src);
 	printf("n: %d\n", n);
-	printf("dest: %s\n", dest);
-	printf("contains null byte: %d\n", ft_contains_null_byte(dest, n));
+	printf("dest: %s (should be Hel)\n", dest);
+	printf("contains null byte: %d (should be 1)\n", ft_contains_null_byte(dest, n));
 }
 
 int	main(void)
