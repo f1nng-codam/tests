@@ -5,45 +5,35 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qvan-der <qvan-der@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/14 15:08:49 by qvan-der          #+#    #+#             */
-/*   Updated: 2024/07/14 15:42:00 by qvan-der         ###   ########.fr       */
+/*   Created: 2024/07/14 15:55:17 by qvan-der          #+#    #+#             */
+/*   Updated: 2024/07/14 16:10:41 by qvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_str_is_numeric(char *str);
+char *ft_strupcase(char *str);
 
 void	test_00(void)
 {
-	char	str[53] = "Hello, world!";
+	char	str[53] = "abcABC";
 
-	printf("--- EX03 - Test00\n");
+	printf("--- EX07 - Test00\n");
 	printf("str: %s\n", str);
-	printf("result: %d (should be 0)\n", ft_str_is_numeric(str));
+	printf("result: %s (should be ABCABC)\n", ft_strupcase(str));
 }
 
 void	test_01(void)
 {
-	char	str[53] = "0123456789";
+	char	str[53] = "Hello world!";
 
-	printf("--- EX03 - Test01\n");
+	printf("--- EX07 - Test01\n");
 	printf("str: %s\n", str);
-	printf("result: %d (should be 1)\n", ft_str_is_numeric(str));
-}
-
-void	test_02(void)
-{
-	char	str[1] = "";
-
-	printf("--- EX03 - Test02\n");
-	printf("str: %s\n", str);
-	printf("result: %d (should be 1)\n", ft_str_is_numeric(str));
+	printf("result: %s (should be HELLO WORLD!)\n", ft_strupcase(str));
 }
 
 int main(void)
 {
 	test_00();
 	test_01();
-	test_02();
 }
