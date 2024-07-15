@@ -6,13 +6,13 @@
 /*   By: qvan-der <qvan-der@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/14 15:40:40 by qvan-der          #+#    #+#             */
-/*   Updated: 2024/07/14 15:55:20 by qvan-der         ###   ########.fr       */
+/*   Updated: 2024/07/15 12:53:44 by qvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_str_is_printable(char *str);
+int	ft_str_is_printable(char *str);
 
 void	test_00(void)
 {
@@ -41,7 +41,7 @@ void	test_02(void)
 	printf("result: %d (should be 1)\n", ft_str_is_printable(str));
 }
 
-int main(void)
+int	main(void)
 {
 	test_00();
 	test_01();

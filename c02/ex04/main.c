@@ -6,13 +6,13 @@
 /*   By: qvan-der <qvan-der@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/14 15:33:58 by qvan-der          #+#    #+#             */
-/*   Updated: 2024/07/14 15:42:12 by qvan-der         ###   ########.fr       */
+/*   Updated: 2024/07/15 12:54:16 by qvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_str_is_lowercase(char *str);
+int	ft_str_is_lowercase(char *str);
 
 void	test_00(void)
 {
@@ -41,7 +41,7 @@ void	test_02(void)
 	printf("result: %d (should be 1)\n", ft_str_is_lowercase(str));
 }
 
-int main(void)
+int	main(void)
 {
 	test_00();
 	test_01();

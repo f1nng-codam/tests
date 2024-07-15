@@ -6,13 +6,13 @@
 /*   By: qvan-der <qvan-der@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/14 15:55:17 by qvan-der          #+#    #+#             */
-/*   Updated: 2024/07/14 16:10:41 by qvan-der         ###   ########.fr       */
+/*   Updated: 2024/07/15 12:53:29 by qvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char *ft_strupcase(char *str);
+char	*ft_strupcase(char *str);
 
 void	test_00(void)
 {
@@ -32,7 +32,7 @@ void	test_01(void)
 	printf("result: %s (should be HELLO WORLD!)\n", ft_strupcase(str));
 }
 
-int main(void)
+int	main(void)
 {
 	test_00();
 	test_01();
