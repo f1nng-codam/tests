@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fgroenew <fgroenew@student.codam.nl>       +#+  +:+       +#+        */
+/*   By: qvan-der <qvan-der@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 14:36:09 by fgroenew          #+#    #+#             */
-/*   Updated: 2024/07/13 14:39:55 by fgroenew         ###   ########.fr       */
+/*   Updated: 2024/07/15 12:21:27 by qvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,7 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 
 int	ft_contains_null_byte(char *str, int size)
 {
-	if (str[size] == '\0')
-	{
-		return (1);
-	}
-	return (0);
+	return (str[size] == '\0');
 }
 
 void	ft_fill_str(char *str, int size)
@@ -43,7 +39,7 @@ void	test_00(void)
 	unsigned int	n = 14;
 	unsigned int	result;
 
-	ft_fill_str(dest, 40);
+	ft_fill_str(dest, 20);
 	result = ft_strlcpy(dest, src, n);
 	printf("--- EX10 - Test00\n");
 	printf("src: %s\n", src);
