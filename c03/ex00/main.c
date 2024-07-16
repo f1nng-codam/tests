@@ -6,7 +6,7 @@
 /*   By: fgroenew <fgroenew@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/14 12:33:53 by fgroenew          #+#    #+#             */
-/*   Updated: 2024/07/14 12:38:42 by fgroenew         ###   ########.fr       */
+/*   Updated: 2024/07/16 09:02:38 by fgroenew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,9 +57,24 @@ void	test_02(void)
 	printf("string.h result: %d\n", result2);
 }
 
+void	test_03(void)
+{
+	char	str1[] = "abcd";
+	char	str2[] = "abcdef";
+
+	int		result = ft_strcmp(str1, str2);
+	int		result2 = strcmp(str1, str2);
+	printf("--- EX00 - Test03\n");
+	printf("s1: %s\n", str1);
+	printf("s2: %s\n", str2);
+	printf("result: %d\n", result);
+	printf("string.h result: %d\n", result2);
+}
+
 int	main(void)
 {
 	test_00();
 	test_01();
 	test_02();
+	test_03();
 }

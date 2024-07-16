@@ -6,7 +6,7 @@
 /*   By: fgroenew <fgroenew@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/14 12:33:53 by fgroenew          #+#    #+#             */
-/*   Updated: 2024/07/14 15:29:53 by fgroenew         ###   ########.fr       */
+/*   Updated: 2024/07/16 09:16:58 by fgroenew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,21 @@ void	test_01(void)
 	printf("string.h result: %s\n", strstr(str, to_find));
 }
 
+void	test_02(void)
+{
+	char	str[] = "Hello, world!";
+	char	to_find[] = "";
+
+	printf("--- EX04 - Test02\n");
+	printf("str: %s\n", str);
+	printf("to_find: %s\n", to_find);
+	printf("result: %s\n", ft_strstr(str, to_find));
+	printf("string.h result: %s\n", strstr(str, to_find));
+}
+
 int	main(void)
 {
 	test_00();
 	test_01();
+	test_02();
 }
