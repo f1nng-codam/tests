@@ -6,7 +6,7 @@
 /*   By: fgroenew <fgroenew@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/14 12:33:53 by fgroenew          #+#    #+#             */
-/*   Updated: 2024/07/16 10:47:27 by fgroenew         ###   ########.fr       */
+/*   Updated: 2024/07/16 14:01:07 by fgroenew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ void	test_00(void)
 	printf("dest: %s\n", dest);
 	printf("src: %s\n", src);
 	printf("size: %d\n", size);
-	ft_strlcat(dest, src, size);
 	result = ft_strlcat(dest, src, size);
 	printf("result: %s (should be Hello, world!)\n", dest);
 	printf("return: %d (should be 13)\n", result);
