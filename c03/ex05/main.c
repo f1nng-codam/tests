@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fgroenew <fgroenew@student.codam.nl>       +#+  +:+       +#+        */
+/*   By: qvan-der <qvan-der@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/14 12:33:53 by fgroenew          #+#    #+#             */
-/*   Updated: 2024/07/16 14:01:07 by fgroenew         ###   ########.fr       */
+/*   Updated: 2024/07/17 13:44:19 by qvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,7 +113,7 @@ void	test_06(void)
 	printf("src: %s\n", src);
 	printf("size: %d\n", size);
 	ft_strlcat(dest, src, size);
-	printf("result: %s (should be Hello, world!)\n", dest);
+	printf("result: %s (should be Hello, world)\n", dest);
 }
 
 void	test_07(void)
@@ -141,7 +141,7 @@ void	test_08(void)
 	printf("src: %s\n", src);
 	printf("size: %d\n", size);
 	ft_strlcat(dest, src, size);
-	printf("result: %s (should be Hello, wo)\n", dest);
+	printf("result: %s (should be Hello, wor)\n", dest);
 }
 
 void	test_09(void)
