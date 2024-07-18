@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fgroenew <fgroenew@student.codam.nl>       +#+  +:+       +#+        */
+/*   By: qvan-der <qvan-der@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/14 16:41:16 by fgroenew          #+#    #+#             */
-/*   Updated: 2024/07/18 11:48:26 by fgroenew         ###   ########.fr       */
+/*   Updated: 2024/07/18 15:05:18 by qvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -179,6 +179,51 @@ void	test_10(void)
 	printf("\n");
 }
 
+void	test_11(void)
+{
+	int		nbr;
+	char	*base;
+
+	nbr = -2147483648;
+	base = "e";
+	printf("--- EX04 - Test011\n");
+	printf("nbr: %d\n", nbr);
+	printf("base: %s\n", base);
+	printf("output (should be empty)\n");
+	ft_putnbr_base(nbr, base);
+	printf("\n");
+}
+
+void	test_12(void)
+{
+	int		nbr;
+	char	*base;
+
+	nbr = -2147483648;
+	base = "e++";
+	printf("--- EX04 - Test012\n");
+	printf("nbr: %d\n", nbr);
+	printf("base: %s\n", base);
+	printf("output (should be empty)\n");
+	ft_putnbr_base(nbr, base);
+	printf("\n");
+}
+
+void	test_13(void)
+{
+	int		nbr;
+	char	*base;
+
+	nbr = -2147483648;
+	base = "ee";
+	printf("--- EX04 - Test013\n");
+	printf("nbr: %d\n", nbr);
+	printf("base: %s\n", base);
+	printf("output (should be empty)\n");
+	ft_putnbr_base(nbr, base);
+	printf("\n");
+}
+
 int	main(void)
 {
 	test_00();
@@ -192,4 +237,7 @@ int	main(void)
 	test_08();
 	test_09();
 	test_10();
+	test_11();
+	test_12();
+	test_13();
 }
