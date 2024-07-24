@@ -6,7 +6,7 @@
 /*   By: fgroenew <fgroenew@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 11:08:24 by fgroenew          #+#    #+#             */
-/*   Updated: 2024/07/23 11:12:40 by fgroenew         ###   ########.fr       */
+/*   Updated: 2024/07/24 13:33:01 by fgroenew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,9 @@
 
 int	main(void)
 {
-	int	a;
-	int	b;
-	int	c;
-	int	d;
-
-	a = -5;
-	b = -10;
-	c = 5;
-	d = 10;
-	ABS(&a);
-	ABS(&b);
-	ABS(&c);
-	ABS(&d);
-	printf("result: %d\n", a);
-	printf("result: %d\n", b);
-	printf("result: %d\n", c);
-	printf("result: %d\n", d);
+	printf("result (from -5): %d\n", ABS(-5));
+	printf("result (from -10): %d\n", ABS(-10));
+	printf("result (from 0): %d\n", ABS(0));
+	printf("result (from 5): %d\n", ABS(5));
+	printf("result (from 42): %d\n", ABS(42));
 }
